@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+/* your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  position: relative;
+  height: 40px;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.input {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* When active class is added */
+.search.active .input {
+  width: 200px;
+  padding: 8px;
+  opacity: 1;
+}
